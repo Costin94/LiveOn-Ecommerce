@@ -35,16 +35,43 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\Categories\CreateCategoryCommand.cs" />
+    <Compile Include="Commands\Categories\DeleteCategoryCommand.cs" />
+    <Compile Include="Commands\Categories\UpdateCategoryCommand.cs" />
+    <Compile Include="Commands\Products\CreateProductCommand.cs" />
+    <Compile Include="Commands\Products\DeleteProductCommand.cs" />
+    <Compile Include="Commands\Products\UpdateProductCommand.cs" />
+    <Compile Include="Commands\Products\UpdateProductStockCommand.cs" />
+    <Compile Include="DTOs\CategoryDto.cs" />
+    <Compile Include="DTOs\ProductDto.cs" />
+    <Compile Include="DTOs\UserDto.cs" />
+    <Compile Include="Handlers\CommandHandlers\Products\CreateProductCommandHandler.cs" />
+    <Compile Include="Handlers\CommandHandlers\Products\DeleteProductCommandHandler.cs" />
+    <Compile Include="Handlers\CommandHandlers\Products\UpdateProductCommandHandler.cs" />
+    <Compile Include="Handlers\CommandHandlers\Products\UpdateProductStockCommandHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\Categories\GetAllCategoriesQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\Categories\GetCategoryByIdQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\Products\GetAllProductsQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\Products\GetProductByIdQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\Products\GetProductBySkuQueryHandler.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Interfaces\ICommandHandler.cs" />
+    <Compile Include="Interfaces\IQuery.cs" />
+    <Compile Include="Interfaces\IQueryHandler.cs" />
+    <Compile Include="Mappers\CategoryMapper.cs" />
+    <Compile Include="Mappers\ProductMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\Categories\GetAllCategoriesQuery.cs" />
+    <Compile Include="Queries\Categories\GetCategoryByIdQuery.cs" />
+    <Compile Include="Queries\Products\GetAllProductsQuery.cs" />
+    <Compile Include="Queries\Products\GetProductByIdQuery.cs" />
+    <Compile Include="Queries\Products\GetProductBySkuQuery.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="Queries\" />
-    <Folder Include="DTOs\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="Handlers\CommandHandlers\Categories\" />
     <Folder Include="Mappings\" />
     <Folder Include="Validators\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LiveOn.Ecommerce.Domain\LiveOn.Ecommerce.Domain.csproj">

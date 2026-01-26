@@ -9,9 +9,20 @@ namespace LiveOn.Ecommerce.Domain.Interfaces
     /// </summary>
     public interface IUnitOfWork : IDisposable
     {
-        // You'll add specific repositories here later, e.g.:
-        // IProductRepository Products { get; }
-        // IOrderRepository Orders { get; }
+        /// <summary>
+        /// Product repository
+        /// </summary>
+        IProductRepository Product { get; }
+        
+        /// <summary>
+        /// Category repository
+        /// </summary>
+        ICategoryRepository Category { get; }
+        
+        /// <summary>
+        /// User repository
+        /// </summary>
+        IUserRepository User { get; }
         
         /// <summary>
         /// Saves all changes made in this context to the database
