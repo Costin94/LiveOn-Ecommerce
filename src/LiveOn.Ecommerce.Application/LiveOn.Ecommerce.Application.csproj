@@ -45,6 +45,9 @@
     <Compile Include="DTOs\CategoryDto.cs" />
     <Compile Include="DTOs\ProductDto.cs" />
     <Compile Include="DTOs\UserDto.cs" />
+    <Compile Include="Handlers\CommandHandlers\Categories\CreateCategoryCommandHandler.cs" />
+    <Compile Include="Handlers\CommandHandlers\Categories\DeleteCategoryCommandHandler.cs" />
+    <Compile Include="Handlers\CommandHandlers\Categories\UpdateCategoryCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\Products\CreateProductCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\Products\DeleteProductCommandHandler.cs" />
     <Compile Include="Handlers\CommandHandlers\Products\UpdateProductCommandHandler.cs" />
@@ -60,17 +63,23 @@
     <Compile Include="Interfaces\IQueryHandler.cs" />
     <Compile Include="Mappers\CategoryMapper.cs" />
     <Compile Include="Mappers\ProductMapper.cs" />
+    <Compile Include="Mappers\UserMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queries\Categories\GetAllCategoriesQuery.cs" />
     <Compile Include="Queries\Categories\GetCategoryByIdQuery.cs" />
     <Compile Include="Queries\Products\GetAllProductsQuery.cs" />
     <Compile Include="Queries\Products\GetProductByIdQuery.cs" />
     <Compile Include="Queries\Products\GetProductBySkuQuery.cs" />
+    <Compile Include="Services\IUserService.cs" />
+    <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behaviors\" />
-    <Folder Include="Handlers\CommandHandlers\Categories\" />
+    <Folder Include="Commands\Users\" />
+    <Folder Include="Handlers\CommandHandlers\Users\" />
+    <Folder Include="Handlers\QueryHandlers\Users\" />
     <Folder Include="Mappings\" />
+    <Folder Include="Queries\Users\" />
     <Folder Include="Validators\" />
   </ItemGroup>
   <ItemGroup>
