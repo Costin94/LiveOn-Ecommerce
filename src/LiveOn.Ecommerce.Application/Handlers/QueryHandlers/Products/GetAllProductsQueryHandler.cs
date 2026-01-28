@@ -73,24 +73,5 @@ namespace LiveOn.Ecommerce.Application.Handlers.QueryHandlers.Products
 
             return products;
         }
-
-        private ProductDto MapToDto(Product product)
-        {
-            return new ProductDto
-            {
-                Id = product.Id,
-                Name = product.Name,
-                SKU = product.SKU,
-                Description = product.Description,
-                Price = product.Price,
-                StockQuantity = product.StockQuantity,
-                CategoryId = product.CategoryId,
-                CategoryName = product.Category?.Name,
-                Status = product.Status,
-                ImageUrl = product.ImageUrl,
-                CreatedDate = product.CreatedAt,
-                ModifiedDate = product.UpdatedAt
-            };
-        }
     }
 }

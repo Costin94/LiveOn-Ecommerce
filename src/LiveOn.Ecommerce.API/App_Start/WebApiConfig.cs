@@ -1,4 +1,5 @@
 using System.Web.Http;
+using LiveOn.Ecommerce.API.Infrastructure;
 
 namespace LiveOn.Ecommerce.API
 {
@@ -6,6 +7,9 @@ namespace LiveOn.Ecommerce.API
     {
         public static void Register(HttpConfiguration config)
         {
+            // Configure Dependency Injection
+            config.DependencyResolver = new SimpleDependencyResolver();
+
             // Web API configuration and services
 
             // Web API routes
