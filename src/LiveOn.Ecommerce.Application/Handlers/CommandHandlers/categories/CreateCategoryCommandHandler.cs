@@ -16,7 +16,7 @@ namespace LiveOn.Ecommerce.Application.Handlers.CommandHandlers.Categories
 
         public CreateCategoryCommandHandler(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = unitOfWork ?? throw new NullReferenceException(nameof(unitOfWork));
+            _unitOfWork = unitOfWork ?? throw new ArgumentNullException(nameof(unitOfWork));
         }
 
         public int Handle(CreateCategoryCommand command)

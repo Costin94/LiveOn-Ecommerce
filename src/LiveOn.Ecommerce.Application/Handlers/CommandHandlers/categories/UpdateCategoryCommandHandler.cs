@@ -15,7 +15,7 @@ namespace LiveOn.Ecommerce.Application.Handlers.CommandHandlers.Categories
 
         public UpdateCategoryCommandHandler(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = unitOfWork ?? throw new NullReferenceException(nameof(unitOfWork));
+            _unitOfWork = unitOfWork ?? throw new ArgumentNullException(nameof(unitOfWork));
         }
 
         public bool Handle(UpdateCategoryCommand command)
